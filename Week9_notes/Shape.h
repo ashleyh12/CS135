@@ -67,5 +67,7 @@ Extra notes:
     PROTECTED INHERITANCE: When deriving from a protected parent class, then public and protected members of the parent class 
     become protected members of the child class.
     
+-  ALL VARIABLES SHOULD BE PROTECTED!
+    
     
 */
