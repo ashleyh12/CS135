@@ -58,18 +58,14 @@ Extra notes:
 
 - Access specifiers explained: 
 
-
-  -- Public inheritance means:
-    Public parent class members stay public
-    Protected parent class members stay protected 
-    Private parent class members stay inaccessible 
-
-  -- Private inheritance means:
-    Public inherited members become private
-    Protected inherited members become private
-    Private inherited members stay inaccessible
-
-  -- Protected inheritance means: 
-    Protected inheritance is almost never used. With protected inheritance, the public and protected members become protected, and private members stay inaccessible.
-
+    PUBLIC INHERITANCE: When inheriting a class from a public parent class, public members of the parent class 
+    become public members of the child class and protected members of the parent class become protected members of the child class.
+    
+    PRIVATE INHERITANCE: When we derive from a private parent class, then public and protected members of the parent class become 
+    private members of the child class.
+    
+    PROTECTED INHERITANCE: When deriving from a protected parent class, then public and protected members of the parent class 
+    become protected members of the child class.
+    
+    
 */
