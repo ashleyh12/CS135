@@ -1,7 +1,8 @@
 #include <string>
 using namespace std;
+
 //parent class
-class Shape
+class Shape //defining the class shape
 {
 
     private: //no other class can access this
@@ -18,32 +19,28 @@ class Shape
 
 };
 
-//child class: gets all of the public and protected members of its parent class
-//inheritance
-//protected == every child class of Shape can access
-//private == only this class can access
-//public == anyone can access
-
 //child class (Rectangle) inherits all the public and protected members of shape
 
-class Rectangle: public Shape 
+class Rectangle: public Shape  
 {
    
    public:
-   Rectangle();   //constructor
-
+   //it also has a constructor
+   Rectangle();
  //overload = same name, different parameters
-   Rectangle(int,int); //alternate constructor is an example
+ //alternate constructor is an example of overloading
+   Rectangle(int,int);
    int add(); //no paramters
    int add(int); //overload
-   void add(string, int); //another example of overload
+   void add(string, int); //overload
 
-    protected:
-    //more variables
+  protected:
+  //it has more variables
     int length;
     int width;
 
 };
+
 
 /*
 
